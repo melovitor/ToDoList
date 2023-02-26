@@ -1,0 +1,16 @@
+.create{
+    background: var(--blue-dark);
+    color: var(--gray-100);
+    border-radius: 8px;    
+    padding: 1rem;
+    box-sizing: border-box;
+    border: var(--gray-700) 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    transition: background-color 0.5s;
+}
+.create:hover {
+    background: var(--blue);
+}
