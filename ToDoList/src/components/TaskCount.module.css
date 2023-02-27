@@ -11,10 +11,12 @@
     gap: 0.5rem;
     font-weight: bold;
     font-size: 14px;
+    align-items: center;
+    justify-content: center;
 }
 
 .created {
-    color: var(--blue);;
+    color: var(--blue);
 }
 
 .completed {
@@ -25,12 +27,13 @@
     color: var(--gray-200);
     background: var(--gray-400);
     border-radius: 100px;
-    font-size: 12px;
+    font-size: 10px;
     padding: 0.125rem;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: content-box;
+    border: 3px solid var(--gray-400);
 } 
 
 @media (max-width: 768px) {
