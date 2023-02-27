@@ -3,6 +3,8 @@ import  './App.css'
 import { CreateButton } from './components/CreateButton'
 import { Header } from './components/Header'
 import { Input } from './components/Input'
+import { Task } from './components/Task'
+import { TaskCount } from './components/TaskCount'
 
 
 function App() {
@@ -14,8 +16,10 @@ function App() {
         <Input/>
         <CreateButton/>
       </div>
-      
-      
+      <div className='tasks'>
+        <TaskCount/>
+        <Task/>
+      </div>      
     </div>
   )
 }
