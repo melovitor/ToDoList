@@ -1,9 +1,9 @@
 .count{
-    margin-top: 4rem;
+    margin: 4rem auto 1.5rem ;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    max-width: 52.31rem;    
 }
 
 .created, .completed{
@@ -32,3 +32,9 @@
     justify-content: center;
     box-sizing: content-box;
 } 
+
+@media (max-width: 768px) {
+    .count {
+      width: 90%;
+    }    
+}

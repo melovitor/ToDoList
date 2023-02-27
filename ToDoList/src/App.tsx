@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { Input } from './components/Input'
 import { Task } from './components/Task'
 import { TaskCount } from './components/TaskCount'
+import { WithoutTask } from './components/WithoutTask'
 
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
       </div>
       <div className='tasks'>
         <TaskCount/>
-        <Task/>
+        <WithoutTask/>
       </div>      
     </div>
   )

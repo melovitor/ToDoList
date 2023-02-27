@@ -1,18 +1,49 @@
-.task {
+.wrapper {
     background: var(--gray-500);
-    gap: 1.33rem;
     max-width: 52.31rem;
     display: flex;  
-    margin: 1.5rem auto;
+    align-items: center;
+    justify-content: space-between;
+    margin: .75rem auto;
     border-radius: 8px;
     padding: 1rem;
     border: 1px solid var(--gray-300);    
+}
+
+.task {
+    display: flex;
+    gap: 1rem;
 }
 
 .text{
     font-size: 14px;
     color: var(--gray-100);
     font-weight: normal;
+    transition: 0.2s;
+}
+
+.trash{
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    line-height: 0;
+    border-radius: 4px;
+    transition: .2s;
+    color: var(--gray-300);
+    width: 26px;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+img {
+    color: aqua;
+}
+
+.trash:hover{
+    background: var(--gray-400);
+    color: var(--danger);
 }
 
 input[type="checkbox"] {
@@ -23,11 +54,17 @@ input[type="checkbox"] {
     height: 16px;
     border-radius: 999px;
     transition: .2s;
-
+    cursor: pointer;
 }
+
 input[type="checkbox"]:hover {
     background-color: rgba(30, 111, 159, 0.5);
     color: var(--blue-dark) ;
+}
+
+input[type="checkbox"]:hover + .text{
+    color: var(--gray-300);
+    text-decoration: line-through;
 }
 
 input[type="checkbox"]:checked {
@@ -35,7 +72,7 @@ input[type="checkbox"]:checked {
     color:  var(--purple-dark);
 }
 
-input[type="checkbox"]:checked:hover {
+input[type="checkbox"]:checked:hover{
     background-color: var(--purple);
     color:  var(--purple);
 }
@@ -43,11 +80,10 @@ input[type="checkbox"]:checked:hover {
 input[type="checkbox"]:checked  + .text{
     color: var(--gray-300);
     text-decoration: line-through;
-
 }
 
 @media (max-width: 768px) {
-    .task {
+    .wrapper {
       width: 88%;
     }    
 }

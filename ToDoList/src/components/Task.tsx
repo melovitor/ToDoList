@@ -1,4 +1,5 @@
 import styles from './Task.module.css';
+import {Trash} from 'phosphor-react'
 
 export function Task(){
     return (
@@ -6,8 +7,10 @@ export function Task(){
             <div className={styles.task}>
                 <input type="checkbox"/>  
                 <h1 className={styles.text} >Estudar react.</h1> 
-                <button className={styles.trash}> <img src="src/assets/trash.svg" alt="trash"/></button>
             </div>
+                <button className={styles.trash}>
+                    <Trash size={24}/>
+                </button>
         </div>
         
         

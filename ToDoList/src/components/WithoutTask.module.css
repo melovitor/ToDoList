@@ -1,0 +1,14 @@
+.without{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title, .subTitle{
+    color: var(--gray-300);
+}
+
+.subTitle{
+    font-weight: normal;
+}
