@@ -8,6 +8,7 @@
     border-radius: 8px;
     padding: 1rem;
     border: 1px solid var(--gray-300);    
+    cursor: pointer;
 }
 
 .task {
@@ -28,17 +29,13 @@
     cursor: pointer;
     line-height: 0;
     border-radius: 4px;
-    transition: .2s;
+    transition: .3s;
     color: var(--gray-300);
     width: 26px;
     height: 26px;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-img {
-    color: aqua;
 }
 
 .trash:hover{
@@ -55,6 +52,7 @@ input[type="checkbox"] {
     border-radius: 999px;
     transition: .2s;
     cursor: pointer;
+    position: relative;
 }
 
 input[type="checkbox"]:hover {
@@ -70,6 +68,7 @@ input[type="checkbox"]:hover + .text{
 input[type="checkbox"]:checked {
     background-color: var(--purple-dark);
     color:  var(--purple-dark);
+    
 }
 
 input[type="checkbox"]:checked:hover{
@@ -81,6 +80,20 @@ input[type="checkbox"]:checked  + .text{
     color: var(--gray-300);
     text-decoration: line-through;
 }
+
+input[type="checkbox"]:checked::before, input[type="checkbox"]:hover::before {
+    content: '✔';
+    color: var(--gray-100);
+    position: absolute;
+    top: -1.5px;
+    left: 1.5px;
+    font-size: 12px;
+}
+
+input[type="checkbox"]:hover::before {
+    opacity: .5;
+}
+
 
 @media (max-width: 768px) {
     .wrapper {

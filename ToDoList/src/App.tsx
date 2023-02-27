@@ -19,6 +19,7 @@ function App() {
       </div>
       <div className='tasks'>
         <TaskCount/>
+        <Task/>
         <WithoutTask/>
       </div>      
     </div>

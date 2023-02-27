@@ -3,11 +3,19 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    flex-direction: column;  
+    margin-top: 2rem;   
+}
+
+img{
+    margin-bottom: 1rem;
 }
 
 .title, .subTitle{
     color: var(--gray-300);
+    font-size: 16px ;
 }
+
 
 .subTitle{
     font-weight: normal;
